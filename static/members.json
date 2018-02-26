@@ -1,0 +1,47 @@
+{
+  "members" : [
+    {
+      "firstname": "Alex",
+      "lastname": "Corlatti",
+      "title": "Co-Founder &amp; Senior Software Developer",
+      "bio": "Matteo has been a developer since 2001, he started developing video games using OpenGL then moved to web development using ASP and laterPHP. On day one he started developing Android apps with the first public SDK, moving later also to iOS since early 2009. He's a backend developer in NodeJS and contributor in Open Sourceprojects maintained by IBM and Apple. He's a public speaker during developer conference and AppleResearchKit and CareKit advisor.",
+      "social": {
+        "github": "matteocrippa",
+        "twitter": "matteocrippamc",
+        "linkedin": "_ghego"
+      }
+    },
+    {
+      "firstname": "Matteo",
+      "lastname": "Crippa",
+      "title": "Co-Founder &amp; Senior Software Developer",
+      "bio": "Matteo has been a developer since 2001, he started developing video games using OpenGL then moved to web development using ASP and laterPHP. On day one he started developing Android apps with the first public SDK, moving later also to iOS since early 2009. He's a backend developer in NodeJS and contributor in Open Sourceprojects maintained by IBM and Apple. He's a public speaker during developer conference and AppleResearchKit and CareKit advisor.",
+      "social": {
+        "github": "matteocrippa",
+        "twitter": "matteocrippamc",
+        "linkedin": "_ghego"
+      }
+    },
+    {
+      "firstname": "Fabio",
+      "lastname": "Gagliano",
+      "title": "Co-Founder &amp; Senior Software Developer",
+      "bio": "Matteo has been a developer since 2001, he started developing video games using OpenGL then moved to web development using ASP and laterPHP. On day one he started developing Android apps with the first public SDK, moving later also to iOS since early 2009. He's a backend developer in NodeJS and contributor in Open Sourceprojects maintained by IBM and Apple. He's a public speaker during developer conference and AppleResearchKit and CareKit advisor.",
+      "social": {
+        "github": "matteocrippa",
+        "twitter": "matteocrippamc",
+        "linkedin": "_ghego"
+      }
+    },{
+      "firstname": "Francesco",
+      "lastname": "Rho",
+      "title": "Co-Founder &amp; Senior Software Developer",
+      "bio": "Matteo has been a developer since 2001, he started developing video games using OpenGL then moved to web development using ASP and laterPHP. On day one he started developing Android apps with the first public SDK, moving later also to iOS since early 2009. He's a backend developer in NodeJS and contributor in Open Sourceprojects maintained by IBM and Apple. He's a public speaker during developer conference and AppleResearchKit and CareKit advisor.",
+      "social": {
+        "github": "matteocrippa",
+        "twitter": "matteocrippamc",
+        "linkedin": "_ghego"
+      }
+    }
+  ]
+}
