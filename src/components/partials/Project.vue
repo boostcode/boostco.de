@@ -16,13 +16,13 @@
 </template>
 
 <script>
-export default {
-  props: {
-    project: Object,
-    full: Boolean
-  },
-  data: () => ({})
-}
+  export default {
+    props: {
+      project: Object,
+      full: Boolean
+    },
+    data: () => ({})
+  }
 </script>
 
 <style scoped>
@@ -39,6 +39,6 @@ export default {
   }
 
   img {
-    width: 80%;
+    width: 400px;
   }
 </style>
