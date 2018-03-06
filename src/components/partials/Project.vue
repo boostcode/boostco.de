@@ -1,15 +1,19 @@
 <template>
   <v-flex xs12 sm12 md6 xl6>
     <v-card class="mt-4">
-      <h1 class="ml-3">{{ project.name }}</h1>
+      <v-card-title>
+        <h1 class="ml-3">{{ project.name }}</h1>
+      </v-card-title>
       <hr class="ml-3 mr-3 mt-2"/>
-      <img :src="`/static/projects/${ project.image }`" class="pa-3"/>
-      <p class="pa-3 text-xs-left">{{ project.intro }}</p>
-      <p class="pa-3 text-xs-left" v-if="full">{{ project.description }}</p>
-      <h4 class="ml-4">Technologies</h4>
-      <template v-for="tech in project.technologies">
-        <v-chip label v-bind:key="tech" class="ml-2 mb-4 mr-2">{{ tech }}</v-chip>
-      </template>
+      <v-card-text>
+        <img :src="`/static/projects/${ project.image }`" class="pa-3"/>
+        <p class="pa-3 text-xs-left">{{ project.intro }}</p>
+        <p class="pa-3 text-xs-left" v-if="full">{{ project.description }}</p>
+        <h4 class="ml-4">Technologies</h4>
+        <template v-for="tech in project.technologies">
+          <v-chip label v-bind:key="tech" class="ml-2 mb-4 mr-2">{{ tech }}</v-chip>
+        </template>
+      </v-card-text>
     </v-card>
   </v-flex>
 
@@ -39,6 +43,6 @@ export default {
   }
 
   img {
-    width: 400px;
+    width: 90%;
   }
 </style>
