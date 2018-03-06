@@ -7,32 +7,32 @@ import AboutUs from '@/components/AboutUs'
 import Vuetify from 'vuetify'
 import vueHeadful from 'vue-headful'
 
-Vue.use(Router)
-Vue.use(Vuetify)
+Vue.use(Router);
+Vue.use(Vuetify);
 
-Vue.component('vue-headful', vueHeadful)
+Vue.component('vue-headful', vueHeadful);
 
 export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'Home',
-      component: Home
-    },
-    {
-      path: '/contact',
-      name: 'Contact',
-      component: Contact
-    },
-    {
-      path: '/our-work',
-      name: 'OurWork',
-      component: OurWork
-    },
-    {
-      path: '/about-us',
-      name: 'AboutUs',
-      component: AboutUs
-    }
-  ]
+	routes: [
+		{
+			path: '/',
+			name: 'Home',
+			component: Home
+		},
+		{
+			path: '/contact',
+			name: 'Contact',
+			component: Contact
+		},
+		{
+			path: '/our-work',
+			name: 'OurWork',
+			component: OurWork
+		},
+		{
+			path: '/about-us',
+			name: 'AboutUs',
+			component: AboutUs
+		}
+	]
 })
