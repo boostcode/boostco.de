@@ -1,5 +1,5 @@
 <template>
-  <v-flex xs12 sm12 md10 xl10>
+  <v-flex xs12 sm12 md6 xl6>
     <v-card class="mt-4">
       <h1 class="ml-3">{{ project.name }}</h1>
       <hr class="ml-3 mr-3 mt-2"/>
