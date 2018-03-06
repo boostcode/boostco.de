@@ -14,7 +14,7 @@
 <style scoped>
   h1 {
     font-weight: 200;
-    font-size: 80px;
+    font-size: 70px;
     color: #2e96db;
   }
 
