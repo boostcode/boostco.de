@@ -50,36 +50,36 @@
 </template>
 
 <script>
-  import axios from 'axios'
-  import Member from './partials/Member'
+import axios from 'axios'
+import Member from './partials/Member'
 
-  export default {
-    name: 'AboutUs',
-    components: {
-      'member': Member
-    },
-    data: () => ({
-      members: []
-    }),
-    watch: {
-      '$route': 'fetchData'
-    },
-    created() {
-      this.fetchData()
-    },
-    methods: {
-      fetchData() {
-        axios.get('http://localhost:8080/static/members.json')
-            .then((resp) => {
-              console.log(resp.data)
-              this.members = resp.data.members
-            })
-            .catch((err) => {
-              console.error((err))
-            })
-      }
+export default {
+  name: 'AboutUs',
+  components: {
+    'member': Member
+  },
+  data: () => ({
+    members: []
+  }),
+  watch: {
+    '$route': 'fetchData'
+  },
+  created () {
+    this.fetchData()
+  },
+  methods: {
+    fetchData () {
+      axios.get('http://localhost:8080/static/members.json')
+        .then((resp) => {
+          console.log(resp.data)
+          this.members = resp.data.members
+        })
+        .catch((err) => {
+          console.error((err))
+        })
     }
   }
+}
 </script>
 
 <style scoped>

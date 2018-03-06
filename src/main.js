@@ -5,10 +5,10 @@ import App from './App'
 import router from './router'
 import VueAnalytics from 'vue-analytics'
 
-import('babel-polyfill');
-import('../node_modules/vuetify/dist/vuetify.min.css');
+import('babel-polyfill')
+import('../node_modules/vuetify/dist/vuetify.min.css')
 
-Vue.config.productionTip = false;
+Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
@@ -16,9 +16,9 @@ new Vue({
   router,
   components: {App},
   template: '<App/>'
-});
+})
 
 Vue.use(VueAnalytics, {
   id: 'UA-637174-33',
   router: router
-});
+})

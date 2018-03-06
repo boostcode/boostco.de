@@ -1,88 +1,65 @@
 <!DOCTYPE html>
 <html>
-  <head>
-      <title></title>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-      <meta itemprop="name">
-      <meta property="og:title">
-      <meta name="twitter:title">
-      <meta name="description"/>
-      <meta itemprop="description">
-      <meta property="og:description">
-      <meta name="twitter:description">
-      <meta name="twitter:card" content="summary">
-      <meta name="twitter:site" content="@aweconf">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta itemprop="name">
+  <meta property="og:title">
+  <meta name="twitter:title">
+  <meta name="description"/>
+  <meta itemprop="description">
+  <meta property="og:description">
+  <meta name="twitter:description">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@aweconf">
 
-      <link href='//fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
+  <link href='//fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
 
-      <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon/favicon-32x32.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon/favicon-16x16.png">
-      <link rel="shortcut icon" type="image/x-icon" href="/static/favicon/favicon.ico" />
-      <link rel="manifest" href="/static/favicon/manifest.json">
-      <meta name="msapplication-TileColor" content="#ffffff">
-      <meta name="msapplication-TileImage" content="/static/favicon/ms-icon-144x144.png">
-      <meta name="theme-color" content="#ffffff">
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon/favicon-16x16.png">
+  <link rel="shortcut icon" type="image/x-icon" href="/static/favicon/favicon.ico"/>
+  <link rel="manifest" href="/static/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/static/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 
-      <script defer src="//use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-  </head>
-  <body>
-    <div id="app"></div>
+  <script defer src="//use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</head>
+<body>
+<div id="app"></div>
 
-    <!-- Iubenda -->
-    <script type="text/javascript" src="//cdn.iubenda.com/iubenda_i_badge.js"></script>
-    <script type="text/javascript">
-        (function (w, d) {
-            var loader = function () {
-                var s = d.createElement("script"),
-                    tag = d.getElementsByTagName("script")[0];
-                s.src = "//cdn.iubenda.com/iubenda.js";
-                tag.parentNode.insertBefore(s, tag);
-            };
-            if (w.addEventListener) {
-                w.addEventListener("load", loader, false);
-            } else if (w.attachEvent) {
-                w.attachEvent("onload", loader);
-            } else {
-                w.onload = loader;
-            }
-        })(window, document);
-    </script>
+<!-- Iubenda -->
+<script type="text/javascript" src="//cdn.iubenda.com/iubenda_i_badge.js"></script>
+<script type="text/javascript">
+  (function (w, d) {
+    var loader = function () {
+      var s = d.createElement("script"),
+          tag = d.getElementsByTagName("script")[0];
+      s.src = "//cdn.iubenda.com/iubenda.js";
+      tag.parentNode.insertBefore(s, tag);
+    };
+    if (w.addEventListener) {
+      w.addEventListener("load", loader, false);
+    } else if (w.attachEvent) {
+      w.attachEvent("onload", loader);
+    } else {
+      w.onload = loader;
+    }
+  })(window, document);
+</script>
 
-    <!-- Iubenda Cookies -->
-    <script type="text/javascript">
-        var _iub = _iub || [];
-        _iub.csConfiguration = {
-            cookiePolicyId: 7904617,
-            siteId: 601878,
-            lang: "en"
-        };
-    </script>
-    <script type="text/javascript" src="//cdn.iubenda.com/cookie_solution/safemode/iubenda_cs.js" charset="UTF-8"
-            async></script>
+<!-- Iubenda Cookies -->
+<script type="text/javascript">
+  var _iub = _iub || [];
+  _iub.csConfiguration = {
+    cookiePolicyId: 7904617,
+    siteId: 601878,
+    lang: "en"
+  };
+</script>
+<script type="text/javascript" src="//cdn.iubenda.com/cookie_solution/safemode/iubenda_cs.js" charset="UTF-8"
+        async></script>
 
-    <!-- Start of Async Drift Code -->
-    <script>
-        !function () {
-            var t;
-            if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void(window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0,
-                t.methods = ["identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on"],
-                t.factory = function (e) {
-                    return function () {
-                        var n;
-                        return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
-                    };
-                }, t.methods.forEach(function (e) {
-                t[e] = t.factory(e);
-            }), t.load = function (t) {
-                var e, n, o, i;
-                e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"),
-                    o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "//js.driftt.com/include/" + i + "/" + t + ".js",
-                    n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
-            });
-        }();
-        drift.SNIPPET_VERSION = '0.3.1';
-        drift.load('id8gf9fm89wt');
-    </script>
-  </body>
+</body>
 </html>

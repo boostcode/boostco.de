@@ -2,11 +2,30 @@
   "projects": [
     {
       "name": "DiGiSi",
-      "intro": "",
-      "description": "",
-      "technologies": [ "iOS", "Android", "Parse", "NodeJS", "AngularJS"],
+      "intro": "Digital Signage solution for iOS, tvOS platform.",
+      "description": "We managed to develop a new digital signage solution working on AppleTv, iPhone, iPad and Android. Built on top of Parse and NodeJS, DiGiSi allow small retail and entrerprise to run their digital signage system as a service. Important feature are the image recognition system to selected the right content for the right time and iBeacon framework to provide behavioral targeted contents.",
+      "technologies": [
+        "iOS",
+        "Android",
+        "Parse",
+        "NodeJS",
+        "AngularJS"
+      ],
       "image": "digisi.png",
       "link": "https://digisi.live"
+    },
+    {
+      "name": "Quelli della Pizza",
+      "intro": "Web and Mobile eCommerce solution built on top of WooCommerce and native apps.",
+      "description": "We managed to develop a native iOS and Android application to help Quelli della Pizza in supporting their customer, allowing them order items with just one tap.      Built on top of WooCommerce, the famous Wordpress plugin for eCommerce, we managed to develop the missing API to provide the customer the full desktop experience on their mobile devices.",
+      "technologies": [
+        "iOS",
+        "Android",
+        "WooCommerce",
+        "Wordpress"
+      ],
+      "image": "qdp.png",
+      "link": "https://quellidellapizza.it"
     }
   ]
 }

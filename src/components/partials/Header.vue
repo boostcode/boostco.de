@@ -7,11 +7,7 @@
         <h3>👨‍💻 Versatility for your 📲 software projects!</h3>
       </v-flex>
     </v-layout>
-    <v-layout align-center justify-center>
-      <v-flex xs8 sm8 md8 xl8 class="text-xs-center">
-        <hr class="mt-4"/>
-      </v-flex>
-    </v-layout>
+    <hr class="mt-4 ml-5 mr-5"/>
   </v-container>
 </template>
 
