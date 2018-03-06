@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f2c4105c-a069-42c1-9d63-a78a6f2d98dd" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/src/components/Home.vue" afterPath="$PROJECT_DIR$/src/components/Home.vue" />
-      <change beforePath="$PROJECT_DIR$/src/components/partials/Project.vue" afterPath="$PROJECT_DIR$/src/components/partials/Project.vue" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,9 +36,11 @@
       <file leaf-file-name="Home.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Home.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
-              <caret line="44" column="44" lean-forward="false" selection-start-line="44" selection-start-column="44" selection-end-line="44" selection-end-column="44" />
-              <folding />
+            <state relative-caret-position="341">
+              <caret line="79" column="137" lean-forward="false" selection-start-line="79" selection-start-column="137" selection-end-line="79" selection-end-column="137" />
+              <folding>
+                <element signature="e#2376#2401#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -202,12 +203,12 @@
       <workItem from="1516618251126" duration="332000" />
       <workItem from="1519638727126" duration="67000" />
       <workItem from="1520341378416" duration="3538000" />
-      <workItem from="1520350439084" duration="2270000" />
+      <workItem from="1520350439084" duration="2763000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7928000" />
+    <option name="totallyTimeSpent" value="8421000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1041" y="10" width="1440" height="900" extended-state="0" />
@@ -419,9 +420,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="44" column="44" lean-forward="false" selection-start-line="44" selection-start-column="44" selection-end-line="44" selection-end-column="44" />
-          <folding />
+        <state relative-caret-position="341">
+          <caret line="79" column="137" lean-forward="false" selection-start-line="79" selection-start-column="137" selection-end-line="79" selection-end-column="137" />
+          <folding>
+            <element signature="e#2376#2401#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

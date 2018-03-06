@@ -6,7 +6,9 @@
           <b>BoostCode</b> is a team of freelance frontend, backend, and mobile developers
         </p>
         <p>
-          Since 2016 we helped more than 18 companies around the world in building their awesome projects.
+          Since {{ marketing.since }} we helped more than {{ marketing.companies }} companies around the world in
+          building their awesome
+          projects.
         </p>
       </v-flex>
       <v-flex xs10 sm12 md4 xl4>
@@ -42,72 +44,71 @@
           <project :project="project" limit="2" v-bind:key="project.name"></project>
         </template>
       </v-flex>
-      <v-flex xs12 sm12 md4 xl4 class="mt-4 mb-4">
-        <hr/>
-        <div class="mt-1 pa-2">
-          <h1>🏷 89+ projects
-            published</h1>
+      <template v-for="badge in badges">
+        <v-flex xs12 sm12 md4 xl4 class="mt-4 mb-4" v-bind:key="badge.title">
+          <hr/>
+          <div class="mt-1 pa-2">
+            <h1>{{ badge.title }}</h1>
 
-          <p>BoostCode was able to help more than 18 companies since 2016, supporting them in designing and developing
-            more than 89 applications so far.</p>
-        </div>
-      </v-flex>
-      <v-flex xs12 sm12 md4 xl4>
-        <hr/>
-        <div class="mt-1 pa-2">
-          <h1>📱 Mobile
-            development</h1>
-
-          <p>BoostCode loves mobile applications, we usually develop native apps in Objective-C, Swift, Java or Android.
-            We developed so far B2C and B2B apps both.</p>
-
-        </div>
-      </v-flex>
-      <v-flex xs12 sm12 md4 xl4>
-        <hr/>
-        <div class="mt-1 pa-2">
-          <h1>🖥 Backend
-            development</h1>
-
-          <p>BoostCode has different skills in backend app development. PHP, NodeJS, Python, and Java are our favorite
-            scripting and programming languages to do this job.</p>
-        </div>
-      </v-flex>
+            <p>{{ badge.text }}</p>
+          </div>
+        </v-flex>
+      </template>
     </v-layout>
   </v-container>
 </template>
 
 <script>
-  import axios from 'axios'
-  import Project from './partials/Project'
+import axios from 'axios'
+import Project from './partials/Project'
 
-  export default {
-    name: 'Home',
-    components: {
-      'project': Project
+export default {
+  name: 'Home',
+  components: {
+    'project': Project
+  },
+  data: () => ({
+    projects: [],
+    marketing: {
+      'since': 2016,
+      'companies': 18,
+      'projects': 89
     },
-    data: () => ({
-      projects: []
-    }),
-    watch: {
-      '$route': 'fetchData'
-    },
-    created() {
-      this.fetchData()
-    },
-    methods: {
-      fetchData() {
-        axios.get('http://localhost:8080/static/projects.json')
-            .then((resp) => {
-              console.log(resp.data)
-              this.projects = resp.data.projects.slice(0, 2)
-            })
-            .catch((err) => {
-              console.error((err))
-            })
+    badges: [
+      {
+        'title': '🏷 Projects published',
+        'text': 'BoostCode helped so far a spreading number of companies, startups and digital agencies in developing native solutions.'
+      },
+      {
+        'title': '📱 Mobile development',
+        'text': 'BoostCode loves mobile applications, we usually develop native apps in Objective-C, Swift, Java or Android. We developed so far B2C and B2B apps both.'
+      },
+      {
+        'title': '🖥 Backend development',
+        'text': 'BoostCode has different skills in backend app development. PHP, NodeJS, Python, and Java are our favorite scripting and programming languages to do this job.'
       }
+    ]
+
+  }),
+  watch: {
+    '$route': 'fetchData'
+  },
+  created () {
+    this.fetchData()
+  },
+  methods: {
+    fetchData () {
+      axios.get('http://localhost:8080/static/projects.json')
+        .then((resp) => {
+          console.log(resp.data)
+          this.projects = resp.data.projects.slice(0, 2)
+        })
+        .catch((err) => {
+          console.error((err))
+        })
     }
   }
+}
 </script>
 
 <style scoped>
