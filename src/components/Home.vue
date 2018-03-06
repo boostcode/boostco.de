@@ -98,7 +98,7 @@ export default {
   },
   methods: {
     fetchData () {
-      axios.get('http://localhost:8080/static/projects.json')
+      axios.get('https://boostco.de/static/projects.json')
         .then((resp) => {
           console.log(resp.data)
           this.projects = resp.data.projects.slice(0, 2)

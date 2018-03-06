@@ -69,7 +69,7 @@ export default {
   },
   methods: {
     fetchData () {
-      axios.get('http://localhost:8080/static/members.json')
+      axios.get('https://boostco.de/static/members.json')
         .then((resp) => {
           console.log(resp.data)
           this.members = resp.data.members
