@@ -15,13 +15,13 @@
 </template>
 
 <script>
-  export default {
-    props: {
-      project: Object,
-      full: Boolean
-    },
-    data: () => ({})
-  }
+export default {
+  props: {
+    project: Object,
+    full: Boolean
+  },
+  data: () => ({})
+}
 </script>
 
 <style scoped>

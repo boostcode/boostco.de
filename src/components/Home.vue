@@ -42,7 +42,7 @@
           <project :project="project" limit="2" v-bind:key="project.name"></project>
         </template>
       </v-flex>
-      <v-flex xs12 sm12 md4 xl4 class="mb-4">
+      <v-flex xs12 sm12 md4 xl4 class="mt-4 mb-4">
         <hr/>
         <div class="mt-1 pa-2">
           <h1>🏷 89+ projects
@@ -78,36 +78,36 @@
 </template>
 
 <script>
-import axios from 'axios'
-import Project from './partials/Project'
+  import axios from 'axios'
+  import Project from './partials/Project'
 
-export default {
-  name: 'Home',
-  components: {
-    'project': Project
-  },
-  data: () => ({
-    projects: []
-  }),
-  watch: {
-    '$route': 'fetchData'
-  },
-  created () {
-    this.fetchData()
-  },
-  methods: {
-    fetchData () {
-      axios.get('http://localhost:8080/static/projects.json')
-        .then((resp) => {
-          console.log(resp.data)
-          this.projects = resp.data.projects.slice(0, 2)
-        })
-        .catch((err) => {
-          console.error((err))
-        })
+  export default {
+    name: 'Home',
+    components: {
+      'project': Project
+    },
+    data: () => ({
+      projects: []
+    }),
+    watch: {
+      '$route': 'fetchData'
+    },
+    created() {
+      this.fetchData()
+    },
+    methods: {
+      fetchData() {
+        axios.get('http://localhost:8080/static/projects.json')
+            .then((resp) => {
+              console.log(resp.data)
+              this.projects = resp.data.projects.slice(0, 2)
+            })
+            .catch((err) => {
+              console.error((err))
+            })
+      }
     }
   }
-}
 </script>
 
 <style scoped>
