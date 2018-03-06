@@ -1,0 +1,12 @@
+{
+  "projects": [
+    {
+      "name": "DiGiSi",
+      "intro": "",
+      "description": "",
+      "technologies": [ "iOS", "Android", "Parse", "NodeJS", "AngularJS"],
+      "image": "digisi.png",
+      "link": "https://digisi.live"
+    }
+  ]
+}

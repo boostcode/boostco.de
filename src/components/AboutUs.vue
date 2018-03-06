@@ -1,8 +1,17 @@
 <template>
   <div>
+    <v-container grid-list-xl text-xs-left fluid fill-height>
+      <v-layout row wrap>
+        <template v-for="member in members">
+          <member :data="member" :key="member.lastname"></member>
+        </template>
+      </v-layout>
+    </v-container>
     <v-container grid-list-xl fluid fill-height>
       <v-layout row wrap align-center justify-center>
-        <v-flex xs12 sm12 md12 xl12 class="text-xs-center">
+        <v-flex xs12 sm12 md8 xl8 class="text-xs-left">
+          <h1>Who we are</h1>
+          <hr class="mb-4"/>
           <p>We all started developing in our favorite languages for passion. That's what moves us!
 
             We like experimenting and participating in open source projects.
@@ -12,6 +21,7 @@
 
             We like your next project! Would you like to share that with us?</p>
           <h1>Our story</h1>
+          <hr class="mb-4"/>
           <p>
             BoostCode was settled in February 2016 by Alex and Matteo, our idea is to provide a smart, flexible, and
             reactive solution for mobile, backend and frontend development.
@@ -23,6 +33,7 @@
             well, this makes us be reactive and faster in approaching any new project.
           </p>
           <h1>What's important for us</h1>
+          <hr class="mb-4"/>
           <p>
             The most important thing is the customer satisfaction, we love to help our customer in every step of the
             project.
@@ -32,15 +43,7 @@
             Our customer centric approach mixed to agile methodologies, as Scrum, allows us to approach any project in
             the most flexible and proactive way possible.
           </p>
-          <h1>Team Members</h1>
         </v-flex>
-      </v-layout>
-    </v-container>
-    <v-container grid-list-xl text-xs-left fluid fill-height>
-      <v-layout row wrap>
-        <template v-for="member in members">
-          <member :data="member" :key="member.lastname"></member>
-        </template>
       </v-layout>
     </v-container>
   </div>
@@ -68,7 +71,7 @@
       fetchData() {
         axios.get('http://localhost:8080/static/members.json')
             .then((resp) => {
-              console.log(resp.data);
+              console.log(resp.data)
               this.members = resp.data.members
             })
             .catch((err) => {
@@ -82,5 +85,9 @@
 <style scoped>
   h1 {
     color: #2e96db;
+  }
+
+  hr {
+    border: 1px solid #2e96db;
   }
 </style>

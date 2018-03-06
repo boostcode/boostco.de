@@ -1,0 +1,73 @@
+{
+  "members": [
+    {
+      "image": "alex.jpg",
+      "firstname": "Alex",
+      "lastname": "Corlatti",
+      "title": "Co-Founder & Senior Software Developer",
+      "bio": "Alex is an iOS Developer since late 2010. He also started recently developing solutions for tvOS and watchOS too. He has a solid base in web development from his studies, in both frontend and backend development in PHP and NodeJs. When became Freelancer he started to travel as a hobby and often he joins this passion with work, attending to conferences around the world.",
+      "social": {
+        "github": "https://github.com/CorlaOnline",
+        "twitter": "https://twitter.com/corlaonline",
+        "linkedin": "https://linkedin.com/in/alexcorlatti"
+      },
+      "skills": [
+        "iOS",
+        "AngularJS",
+        "NodeJS"
+      ]
+    },
+    {
+      "image": "matteo.jpg",
+      "firstname": "Matteo",
+      "lastname": "Crippa",
+      "title": "Co-Founder & Senior Software Developer",
+      "bio": "Matteo has been a developer since 2001, he started developing video games first then moved to web development. He started working on Android SDK as soon it was released than moved to iOS development in 2009. He loves contributing to open source project on GitHub and share knowledge during developer conferences as a speaker.",
+      "social": {
+        "github": "https://github.com/matteocrippa",
+        "linkedin": "https://linkedin.com/in/matteocrippamc",
+        "twitter": "https://twitter.com/_ghego"
+      },
+      "skills": [
+        "iOS",
+        "Android",
+        "VueJS",
+        "NodeJS",
+        "WordPress",
+        "PHP"
+      ]
+    },
+    {
+      "image": "fabio.jpg",
+      "firstname": "Fabio",
+      "lastname": "Gagliano",
+      "title": "Android & Frontend developer",
+      "bio": "Fabio graduated as IT engineer and he is one of the first members of our crew. After a 4-year project, he is now interested in short-term projects, in order to enhance his skills and learn new languages. He is a backend expert, working with Java (J2EE), PHP and JS (NodeJS). He is also a front-end developer, working with AngularJS and React and developed for Android and iOS.",
+      "social": {
+        "github": "https://github.com/gfabio85",
+        "linkedin": "https://linkedin.com/in/fabio-gagliano-2b0320117"
+      },
+      "skills": [
+        "Android",
+        "VueJS",
+        "NodeJS",
+        "Java"
+      ]
+    },
+    {
+      "image": "rho.jpg",
+      "firstname": "Francesco",
+      "lastname": "Rho",
+      "title": "Full stack developer",
+      "bio": "Francesco started his career as a Wordpress Developer, after earning a bachelor's level degree in \"Ingegneria Informatica\". He achieved a deep knowledge of both backend and frontend web development using Wordpress, Laravel, and Codeigniter.His areas of expertise also include the development of apps for Android and iOS.",
+      "social": {
+        "github": "https://github.com/francyrho11",
+        "linkedin": "https://linkedin.com/in/francesco-rho-4571b578"
+      },
+      "skills": [
+        "WordPress",
+        "PHP"
+      ]
+    }
+  ]
+}
