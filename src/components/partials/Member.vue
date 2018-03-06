@@ -1,5 +1,5 @@
 <template>
-  <v-flex xs12 sm12 md4 xl4 class="text-xs-center">
+  <v-flex xs12 sm12 md4 xl4 offset-md1 offset-xl1 class="text-xs-center">
     <v-card>
       <img :src="`/static/team/${ data.image }`" class="pa-3"/>
       <h1>{{ data.firstname }} {{ data.lastname }}</h1>
