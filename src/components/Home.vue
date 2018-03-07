@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-container grid-list-xl fluid fill-height>
-      <v-layout row wrap align-center justify-center>
+      <v-layout row wrap align-top justify-center>
         <v-flex xs12 sm12 md10 xl10 class="text-xs-center">
           <p>
             <b>BoostCode</b> is a team of freelance frontend, backend, and mobile developers
@@ -16,7 +16,7 @@
     </v-container>
 
     <v-container grid-list-xl fluid fill-height>
-      <v-layout row wrap align-center justify-center>
+      <v-layout row wrap align-top justify-center>
         <v-flex xs10 sm12 md4 xl4>
           <h2>👨‍💻 Services</h2>
           <div class="mt-1 pa-2">
@@ -33,14 +33,10 @@
           <p>We study hard to try to use the best technologies in the market, at this very moment we can support you
             on:</p>
           <div class="mt-1 pa-2">
-            <h4>iOS</h4>
-            <em>Objective-C</em>, <em>Swift</em>
-            <h4>Android</h4>
-            <em>Java</em>, <em>Kotlin</em>
-            <h4>Backend</h4>
-            <em>PHP</em>, <em>NodeJS</em>, <em>Python</em>, <em>Java</em>
-            <h4>Frontend</h4>
-            <em>AngularJS</em>, <em>VueJS</em>, <em>jQuery</em>
+            <template v-for="tech in technologies">
+              <h4 v-bind:key="tech.name">{{ tech.name }}</h4>
+              <em v-for="framework in tech.frameworks" v-bind:key="framework">{{ framework }} </em>
+            </template>
           </div>
         </v-flex>
       </v-layout>
@@ -48,10 +44,10 @@
 
     <v-container grid-list-xl fluid fill-height>
       <v-layout row wrap align-center justify-center>
-        <v-flex xs12 sm12 md10 xl10>
+        <v-flex xs12 sm12 md12 xl12>
           <h2>Latest Projects</h2>
+          <hr/>
         </v-flex>
-
         <template v-for="project in projects">
           <project :project="project" limit="2" v-bind:key="project.name"></project>
         </template>
@@ -103,11 +99,39 @@ export default {
         'title': '🖥 Backend development',
         'text': 'BoostCode has different skills in backend app development. PHP, NodeJS, Python, and Java are our favorite scripting and programming languages to do this job.'
       }
+    ],
+    technologies: [{
+      'name': 'Mobile',
+      'frameworks': [
+        'iOS (Objective-C, Swift),',
+        'Android (Java, Kotlin)']
+    },
+    {
+      'name': 'Backend',
+      'frameworks':
+              [
+                'NodeJS,',
+                'PHP,',
+                'WordPress,',
+                'WooCommerce,',
+                'Parse'
+              ]
+    },
+    {
+      'name': 'Frontend',
+      'frameworks':
+              [
+                'AngularJS,',
+                'VueJS,',
+                'jQuery'
+              ]
+    }
     ]
 
   }),
   watch: {
-    '$route': 'fetchData'
+    '$route':
+          'fetchData'
   },
   created () {
     this.fetchData()

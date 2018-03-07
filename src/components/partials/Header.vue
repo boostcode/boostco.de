@@ -4,7 +4,7 @@
       <v-flex xs12 sm12 md12 xl12 class="text-xs-center">
         <img src="../../assets/logo.png" alt="BoostCode Logo">
         <h1>BoostCode</h1>
-        <h5>👨‍💻 Versatility for your 📲 software projects!</h5>
+        <h3>👨‍💻 Versatility for your 📲 software projects!</h3>
       </v-flex>
     </v-layout>
     <hr class="mt-4 ml-5 mr-5"/>
@@ -17,7 +17,7 @@
     color: #2e96db;
   }
 
-  h5 {
+  h3 {
     color: #2e96db;
   }
 
