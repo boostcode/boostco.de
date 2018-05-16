@@ -3,7 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import VueAnalytics from 'vue-analytics'
+// import VueAnalytics from 'vue-analytics'
 
 import('babel-polyfill')
 import('../node_modules/vuetify/dist/vuetify.min.css')
@@ -18,7 +18,7 @@ new Vue({
   template: '<App/>'
 })
 
-Vue.use(VueAnalytics, {
+/* Vue.use(VueAnalytics, {
   id: 'UA-637174-33',
   router: router
-})
+}) */
