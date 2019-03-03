@@ -16,5 +16,5 @@ export default {
   data: () => ({
     year: new Date().getFullYear()
   })
-};
+}
 </script>
