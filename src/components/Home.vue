@@ -24,8 +24,7 @@
               <b>Development</b> that's why you are here! A full team of full-stack developers ready to help you.
             </p>
             <p>
-              <b>Mobile Security</b> Assessment are you sure your apps are secure? We can help you testing your
-              applications against the most commonly used flaws.
+              <b>QA &amp; Mobile Security</b> We take care of testing your app, as a service, and provide reports for QA and security flaws according OWSAP.
             </p>
             <p>
               <b>Project Management</b> we take care of your projects, using Scrum methodologies with our a well-knit
@@ -70,7 +69,7 @@
 
 <script>
 export default {
-  name: 'Home',
+  name: "Home",
   data: () => ({
     marketing: {
       since: 2016,
@@ -79,44 +78,50 @@ export default {
     },
     badges: [
       {
-        title: '🏷 Projects published',
+        title: "🏷 Projects published",
         text:
-          'BoostCode helped so far a spreading number of companies, startups and digital agencies in developing native solutions.'
+          "BoostCode helped so far a spreading number of companies, startups and digital agencies in developing native solutions."
       },
       {
-        title: '📱 Mobile development',
+        title: "📱 Mobile development",
         text:
-          'BoostCode loves mobile applications, we usually develop native apps in Objective-C, Swift, Java or Android. We developed so far B2C and B2B apps both.'
+          "BoostCode loves mobile applications, we usually develop native apps in Objective-C, Swift, Java or Android. We developed so far B2C and B2B apps both."
       },
       {
-        title: '🖥 Backend development',
+        title: "🖥 Backend development",
         text:
-          'BoostCode has different skills in backend app development. PHP, NodeJS, Python, and Java are our favorite scripting and programming languages to do this job.'
+          "BoostCode has different skills in backend app development. PHP, NodeJS, Python, and Java are our favorite scripting and programming languages to do this job."
       }
     ],
     technologies: [
       {
-        name: 'Mobile',
+        name: "Mobile",
         frameworks: [
-          'iOS native (Objective-C, Swift),',
-          'Android native (Java, Kotlin)',
-          'Flutter'
+          "iOS native (Objective-C, Swift),",
+          "Android native (Java, Kotlin),",
+          "Flutter"
         ]
       },
       {
-        name: 'Backend',
-        frameworks: ['NodeJS,', 'PHP,', 'WordPress,', 'WooCommerce,', 'Parse']
+        name: "Backend",
+        frameworks: [
+          "NodeJS / ExpressJS,",
+          "PHP,",
+          "WordPress,",
+          "WooCommerce,",
+          "Parse"
+        ]
       },
       {
-        name: 'Frontend',
-        frameworks: ['AngularJS,', 'VueJS,', 'jQuery']
+        name: "Frontend",
+        frameworks: ["AngularJS,", "VueJS,", "jQuery"]
       }
     ]
   }),
   watch: {},
-  created () {},
+  created() {},
   methods: {}
-}
+};
 </script>
 
 <style scoped>
